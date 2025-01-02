@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Admin</title>
+  </head>
+  <body>
+    <div class="relative grid size-full min-h-screen md:grid-cols-[256px_1fr]">
+      <div
+        class="col-span-2 flex size-full flex-col items-center justify-center p-5 md:p-10"
+      >
+        <h2 class="pb-4 pt-5 text-[28px] font-medium">Sign Up</h2>
+        <div class="mt-7 flex size-full flex-col gap-y-5 md:max-w-[400px]">
+          <label for="" class="flex flex-col">
+            <span class="mb-1 text-[14px] text-text-faded"> Email </span>
+            <input
+              type="text"
+              placeholder="Email"
+              class="h-12 w-full rounded-lg border border-transparent bg-white/5 px-5 placeholder:text-text-disabled focus:border-white/10"
+            />
+            <span class="hidden pt-1 text-[13px] text-danger">Warning</span>
+          </label>
+          <label for="" class="flex flex-col">
+            <span class="mb-1 text-[14px] text-text-faded"> Password </span>
+            <input
+              type="text"
+              placeholder="Password"
+              class="h-12 w-full rounded-lg border border-transparent bg-white/5 px-5 placeholder:text-text-disabled focus:border-white/10"
+            />
+            <span class="hidden pt-1 text-[13px] text-danger">Warning</span>
+          </label>
+          <label for="" class="flex flex-col">
+            <span class="mb-1 text-[14px] text-text-faded">
+              Confirm Password
+            </span>
+            <input
+              type="text"
+              placeholder="Confirm Password"
+              class="h-12 w-full rounded-lg border border-transparent bg-white/5 px-5 placeholder:text-text-disabled focus:border-white/10"
+            />
+            <span class="hidden pt-1 text-[13px] text-danger">Warning</span>
+          </label>
+          <label for="" class="flex flex-col">
+            <span class="mb-1 text-[14px] text-text-faded"> Full Name </span>
+            <input
+              type="text"
+              placeholder="Full Name"
+              class="h-12 w-full rounded-lg border border-transparent bg-white/5 px-5 placeholder:text-text-disabled focus:border-white/10"
+            />
+            <span class="hidden pt-1 text-[13px] text-danger">Warning</span>
+          </label>
+          <div class="mt-5 flex flex-col">
+            <button type="button" class="btn-default">
+              <span>Sign Up</span>
+            </button>
+            <span class="pt-1 text-[13px] text-danger">Warning</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

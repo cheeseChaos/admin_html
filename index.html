@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Admin</title>
+  </head>
+  <body>
+    <div class="relative grid size-full min-h-screen md:grid-cols-[256px_1fr]">
+      <div
+        class="col-span-2 flex size-full flex-col items-center justify-center p-5 md:p-10"
+      >
+        <h1 class="font-logo pt-[10vh] text-[28px] font-extrabold md:pt-[20vh]">
+          Logo
+        </h1>
+        <div class="mt-7 flex size-full flex-col gap-y-5 md:max-w-[400px]">
+          <label for="" class="flex flex-col">
+            <span class="mb-1 text-[14px] text-text-faded"> Account </span>
+            <input
+              type="text"
+              placeholder="Account"
+              class="h-12 w-full rounded-lg border border-transparent bg-white/5 px-5 placeholder:text-text-disabled focus:border-white/10"
+            />
+            <span class="hidden pt-1 text-[13px] text-danger">Warning</span>
+          </label>
+          <label for="" class="flex flex-col">
+            <span class="mb-1 text-[14px] text-text-faded"> Password </span>
+            <div class="group relative">
+              <input
+                type="text"
+                placeholder="Password"
+                class="peer h-12 w-full rounded-lg border border-transparent bg-white/5 px-5 placeholder:text-text-disabled focus:border-white/10"
+              />
+              <i
+                class="material-symbols-outlined absolute right-4 top-1/2 hidden -translate-y-1/2 cursor-pointer text-[18px] text-text-muted group-hover:block peer-focus-within:block"
+              >
+                visibility_off
+              </i>
+              <i
+                class="material-symbols-outlined absolute right-4 top-1/2 hidden -translate-y-1/2 cursor-pointer text-[20px] text-text-disabled"
+              >
+                visibility
+              </i>
+            </div>
+            <span class="hidden pt-1 text-[13px] text-danger">Warning</span>
+          </label>
+          <div class="mt-5 flex flex-col">
+            <button
+              type="button"
+              class="btn-default"
+              onclick="location.href='pages/dashboard.html'"
+            >
+              <span>Sign in</span>
+            </button>
+            <span class="hidden pt-1 text-[13px] text-danger">Warning</span>
+          </div>
+          <a
+            href="pages/signUp.html"
+            class="mx-auto mt-auto flex text-[13px] text-link"
+          >
+            Sign up
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

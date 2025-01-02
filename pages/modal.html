@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Admin</title>
+  </head>
+  <body>
+    <div class="relative grid size-full min-h-screen md:grid-cols-[256px_1fr]">
+      <div class="modal-overlay">
+        <article class="modal" data-role="success">
+          <button
+            type="button"
+            class="absolute right-5 top-5 block h-6 w-6 opacity-40 transition-opacity hover:opacity-100 md:right-7 md:top-7"
+          >
+            <i class="material-symbols-outlined"> close </i>
+          </button>
+          <main>
+            <div class="flex w-full flex-col items-start">
+              <div class="tag-success mb-3">Success</div>
+              <h1 class="text-[20px] font-extrabold">Success!</h1>
+            </div>
+            <p class="w-full text-[15px] text-text-muted">message</p>
+            <div class="flex w-full gap-3">
+              <button type="button" class="btn-default w-full">
+                <span>OK</span>
+              </button>
+            </div>
+          </main>
+        </article>
+        <article class="modal" data-role="failed">
+          <button
+            type="button"
+            class="absolute right-5 top-5 block h-6 w-6 opacity-40 transition-opacity hover:opacity-100 md:right-7 md:top-7"
+          >
+            <i class="material-symbols-outlined"> close </i>
+          </button>
+          <main>
+            <div class="flex w-full flex-col items-start">
+              <div class="tag-failed mb-3">Failed</div>
+              <h1 class="text-[20px] font-extrabold">
+                Oops, somthing’s wrong!
+              </h1>
+            </div>
+            <p class="w-full text-[15px] text-text-muted">message</p>
+            <div class="flex w-full gap-3">
+              <button type="button" class="btn-line w-full">
+                <span>Close</span>
+              </button>
+              <button type="button" class="btn-default w-full">
+                <span>Try again</span>
+              </button>
+            </div>
+          </main>
+        </article>
+        <article class="modal" data-role="confirm-passwordReset">
+          <button
+            type="button"
+            class="absolute right-5 top-5 block h-6 w-6 opacity-40 transition-opacity hover:opacity-100 md:right-7 md:top-7"
+          >
+            <i class="material-symbols-outlined"> close </i>
+          </button>
+          <main>
+            <div class="flex w-full flex-col items-start">
+              <h1 class="text-[20px] font-extrabold">Reset this password?</h1>
+            </div>
+            <p class="w-full text-[15px] text-text-muted">
+              This action cannot be undone.
+            </p>
+            <div class="flex w-full gap-3">
+              <button type="button" class="btn-line w-full">
+                <span>Close</span>
+              </button>
+              <button type="button" class="btn-default w-full">
+                <span>Confirm</span>
+              </button>
+            </div>
+          </main>
+        </article>
+
+        <article class="modal" data-role="password-set">
+          <button
+            type="button"
+            class="absolute right-5 top-5 block h-6 w-6 opacity-40 transition-opacity hover:opacity-100 md:right-7 md:top-7"
+          >
+            <i class="material-symbols-outlined"> close </i>
+          </button>
+          <main>
+            <div class="flex w-full flex-col items-start">
+              <h1 class="text-[20px] font-extrabold">Set new password</h1>
+            </div>
+            <label for="" class="flex flex-col">
+              <span class="mb-1 text-[14px] text-text-faded">
+                New password
+              </span>
+              <input
+                type="text"
+                placeholder="Enter new password"
+                class="h-12 w-full rounded-full border border-transparent bg-white/5 px-5 placeholder:text-text-disabled focus:border-white/10"
+              />
+              <span class="hidden pt-1 text-[13px] text-danger">Warning</span>
+            </label>
+            <label for="" class="flex flex-col">
+              <span class="mb-1 text-[14px] text-text-faded">
+                Confirm new password
+              </span>
+              <input
+                type="text"
+                placeholder="Re-enter new password"
+                class="h-12 w-full rounded-full border border-transparent bg-white/5 px-5 placeholder:text-text-disabled focus:border-white/10"
+              />
+              <span class="hidden pt-1 text-[13px] text-danger">Warning</span>
+            </label>
+            <div class="flex w-full gap-3">
+              <button type="button" class="btn-line w-full">
+                <span>Close</span>
+              </button>
+              <button type="button" class="btn-default w-full">
+                <span>Save</span>
+              </button>
+            </div>
+          </main>
+        </article>
+        <article class="modal" data-role="confirm-admin-register">
+          <button
+            type="button"
+            class="absolute right-5 top-5 block h-6 w-6 opacity-40 transition-opacity hover:opacity-100 md:right-7 md:top-7"
+          >
+            <i class="material-symbols-outlined"> close </i>
+          </button>
+          <main>
+            <div class="flex w-full flex-col items-start">
+              <h1 class="text-[20px] font-extrabold">Register New Admin?</h1>
+            </div>
+            <div class="flex w-full gap-3">
+              <button type="button" class="btn-line w-full">
+                <span>Close</span>
+              </button>
+              <button type="button" class="btn-default w-full">
+                <span>Confirm</span>
+              </button>
+            </div>
+          </main>
+        </article>
+        <article class="modal" data-role="confirm-admin-edit">
+          <button
+            type="button"
+            class="absolute right-5 top-5 block h-6 w-6 opacity-40 transition-opacity hover:opacity-100 md:right-7 md:top-7"
+          >
+            <i class="material-symbols-outlined"> close </i>
+          </button>
+          <main>
+            <div class="flex w-full flex-col items-start">
+              <h1 class="text-[20px] font-extrabold">
+                Update Admin Information?
+              </h1>
+            </div>
+            <div class="flex w-full gap-3">
+              <button type="button" class="btn-line w-full">
+                <span>Close</span>
+              </button>
+              <button type="button" class="btn-default w-full">
+                <span>Confirm</span>
+              </button>
+            </div>
+          </main>
+        </article>
+        <article class="modal" data-role="confirm-ratio">
+          <button
+            type="button"
+            class="absolute right-5 top-5 block h-6 w-6 opacity-40 transition-opacity hover:opacity-100 md:right-7 md:top-7"
+          >
+            <i class="material-symbols-outlined"> close </i>
+          </button>
+          <main>
+            <div class="flex w-full flex-col items-start">
+              <h1 class="text-[20px] font-extrabold">Change the Ratio?</h1>
+            </div>
+            <p class="w-full text-[15px] text-text-muted">
+              The ratio will be changed to&nbsp;<strong class="text-primary"
+                >00%</strong
+              >. Are you sure?
+            </p>
+            <div class="flex w-full gap-3">
+              <button type="button" class="btn-line w-full">
+                <span>Close</span>
+              </button>
+              <button type="button" class="btn-default w-full">
+                <span>Confirm</span>
+              </button>
+            </div>
+          </main>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>

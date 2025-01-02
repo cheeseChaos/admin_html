@@ -1,0 +1,230 @@
+@layer components {
+  /* safari iOS 12 */
+  @supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  }
+  [data-type="address"] {
+    @apply break-all;
+  }
+  /* end safari iOS 12 */
+
+  .btn-default {
+    @apply min-w-[280px] bg-primary max-md:min-w-[auto];
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 48px;
+    height: 48px;
+    padding: 0 28px;
+    overflow: hidden;
+    border-radius: 8px;
+    font-weight: 700;
+    gap: 8px;
+    &:not(:disabled):hover {
+      background: white;
+      transition: background 150ms cubic-bezier(0.4, 0, 0.2, 1) 150ms;
+      color: black;
+      * {
+        position: relative;
+        z-index: 1;
+      }
+    }
+    &:not(:disabled):hover::after {
+      left: 0;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      background: white;
+      transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  .btn-deep {
+    @apply min-w-[280px] bg-bg-menu text-white max-md:min-w-[auto] [&:not(:disabled)]:hover:text-black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 48px;
+    height: 48px;
+    padding: 0 28px;
+    overflow: hidden;
+    border-radius: 8px;
+    font-weight: 700;
+    gap: 8px;
+    &:not(:disabled):hover {
+      background: white;
+      transition: background 150ms cubic-bezier(0.4, 0, 0.2, 1) 150ms;
+      * {
+        position: relative;
+        z-index: 1;
+      }
+    }
+    &:not(:disabled):hover::after {
+      left: 0;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      background: white;
+      transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  .btn-line {
+    @apply relative min-w-[280px] border border-white/10 text-text-faded max-sm:min-w-[auto] [&:not(:disabled)]:hover:text-text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 48px;
+    height: 48px;
+    padding: 0 28px;
+    overflow: hidden;
+    border-radius: 8px;
+    font-weight: 700;
+    gap: 8px;
+
+    &:not(:disabled):hover {
+      transition: background 150ms cubic-bezier(0.4, 0, 0.2, 1) 150ms;
+
+      * {
+        position: relative;
+        z-index: 1;
+      }
+      border-color: transparent;
+    }
+    &:not(:disabled):hover::after {
+      left: 0;
+    }
+    &::after {
+      @apply bg-white/5;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  .btn-hover {
+    position: relative;
+    overflow: hidden;
+    &:not(:disabled):hover {
+      background: white;
+      transition: background 150ms cubic-bezier(0.4, 0, 0.2, 1) 150ms;
+      color: #000;
+    }
+
+    span,
+    i {
+      z-index: 1;
+      position: relative;
+    }
+    &:not(:disabled):hover::after {
+      transform: translateX(100%);
+    }
+    &:not(:disabled)::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      background: white;
+      transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1.25rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .modal {
+    @apply bg-bg-menu;
+    position: relative;
+    display: grid;
+    width: 100%;
+    border-radius: 16px;
+    padding: 1.25rem;
+    padding-top: 2rem;
+    box-shadow: 0px 170px 68px rgba(0, 0, 0, 0.04),
+      0px 95px 57px rgba(0, 0, 0, 0.13), 0px 42px 42px rgba(0, 0, 0, 0.21),
+      0px 11px 23px rgba(0, 0, 0, 0.25);
+  }
+
+  @media (min-width: 768px) {
+    .modal {
+      width: 500px;
+    }
+  }
+
+  .modal header {
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .modal header h1 {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.375;
+  }
+
+  .modal .subTitle {
+    font-size: 0.875rem;
+    margin-top: 0.75rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    color: var(--text-muted);
+  }
+
+  .modal main {
+    display: grid;
+    gap: 1.25rem;
+    button {
+      min-width: auto;
+    }
+  }
+
+  .tag {
+    @apply w-fit rounded-lg px-3 py-1.5 text-[13px] font-semibold;
+  }
+
+  .tag-success {
+    @apply tag  bg-success/10 text-success;
+  }
+
+  .tag-failed {
+    @apply tag  bg-danger/10 text-danger;
+  }
+}

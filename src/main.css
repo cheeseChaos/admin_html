@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("components.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  ::before,
+  ::after {
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+  }
+
+  @media (max-width: 640px) {
+    :root {
+    }
+  }
+
+  :root {
+  }
+
+  html {
+    background-color: #121212;
+    color: #e5e7eb;
+    font-family: "Pretendard", sans-serif;
+    font-feature-settings: "tnum", "calt" 0;
+    font-variant-numeric: tabular-nums;
+  }
+
+  body {
+    font-size: 15px;
+  }
+
+  main {
+  }
+
+  .font-logo {
+    font-family: "Kanit", serif;
+  }
+
+  button::-webkit-scrollbar {
+    display: none;
+  }
+
+  small {
+    display: flex;
+    font-size: 80%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.25;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    background: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+  }
+
+  button {
+    cursor: pointer;
+    font-weight: normal;
+  }
+
+  input,
+  textarea,
+  select {
+    /* background: var(--input-bg); */
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  select {
+    cursor: pointer;
+  }
+
+  :disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  ::placeholder {
+    /* color: var(--text-disable); */
+  }
+
+  ::-webkit-scrollbar {
+    /* display: none; */
+  }
+
+  ::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    background-clip: padding-box;
+    border: 6px solid transparent;
+  }
+  ::-webkit-scrollbar-button {
+    width: 4px;
+    height: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 40px;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 1, "wght" 600, "GRAD" 0, "opsz" 48;
+  }
+
+  .icon-outlined {
+    font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 0, "opsz" 48;
+  }
+}
